@@ -1,0 +1,26 @@
+{
+  "name": "photography-gallery",
+  "version": "1.0.0",
+  "description": "A monorepo photography gallery application",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "clean": "npm run clean --workspaces && rm -rf node_modules",
+    "install-all": "npm install",
+    "start": "npm start --workspaces"
+  },
+  "keywords": [
+    "photography",
+    "gallery",
+    "monorepo"
+  ],
+  "author": "dngt12",
+  "license": "MIT",
+  "devDependencies": {}
+}
